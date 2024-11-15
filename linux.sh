@@ -41,45 +41,30 @@ apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
 mkdir -p ~/myapp/
 echo "~/myapp dic was created"
 sleep 5s
-
-wget https://github.com/RAAVANUNKNOWN10/software/blob/main/myapp.py
+cd ~/myapp/
+git clone https://github.com/RAAVANUNKNOWN10/linux-py.git
 mv myapp.py ~/myapp/login.py
 #sudo mv myapp.py ~/myapp/login.py
-cd ~/myapp/
-chmod +x login.py
-echo "giving permission of exicution"
 
+chmod 777 login.py
+echo "giving permission of exicution"
+mv login.desktop ~/Desktop
 # creating desk top file
 
 sleep 2s
 
-wget  https://github.com/RAAVANUNKNOWN10/software/blob/main/logo.png
-
-sleep 1s
 #can use root also
-bash -c 'cat > login_desktop.sh << EOF
+#bash -c 'cat > login_desktop.sh << EOF
 
 #!/bin/bash
-sudo python3 ~/myapp/login.py
+#sudo python3 ~/myapp/login.py
 
-EOF'
+#EOF'
 
-chmod +x login_desktop.sh
+chmod 111 login_desktop.sh
 
 cd ~/Desktop
-touch myapp.desktop
 
-bash -c 'cat > ./myapp.desktop <<EOF
-
-[Desktop Entry]
-Name=Raavan
-Comment= pythonqt
-Exce=~/myapp/login_desktop.sh
-Icon=~/myapp/logo.png
-Terminal=false
-Type=Application
-EOF'
-
-chmod +x ./myapp.desktop
+chmod 111 ./myapp.desktop
 
 echo "application stared"
