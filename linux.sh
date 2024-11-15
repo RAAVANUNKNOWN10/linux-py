@@ -43,12 +43,12 @@ echo "~/myapp dic was created"
 sleep 5s
 cd ~/myapp/
 git clone https://github.com/RAAVANUNKNOWN10/linux-py.git
-mv myapp.py ~/myapp/login.py
+mv ./linux-py/myapp.py ~/myapp/login.py
 #sudo mv myapp.py ~/myapp/login.py
 
 chmod 777 login.py
 echo "giving permission of exicution"
-mv login.desktop ~/Desktop
+mv ./linux-py/login.desktop ~/Desktop
 # creating desk top file
 
 sleep 2s
