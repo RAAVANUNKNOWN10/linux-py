@@ -33,6 +33,7 @@ echo "mysql services has been started"
 #sudo mysql -u root -p
 #main packages
 echo "installing pyqt6, mysqlconector,pyside for runing application"
+sudo apt install qt6-qmake qtbase5-dev qtbase6-dev-tools libxcb1 libx11-dev libxkbcommon-x11-0 libx11-xcb-dev libxcb-xinerama0 libxcb-image0 libxcb-randr0 libxcb-shm0 libxcb-icccm4
 sudo apt install python3-pyqt6 #python3-mysql-connector-python python3-pyside6
 #apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
  
