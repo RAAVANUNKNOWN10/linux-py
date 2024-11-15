@@ -1,2 +1,4 @@
 #!/bin/bash
-python3 ~/myapp/linux-py/login.py
+sudo python3 ~/myapp/linux-py/login.py
+
+echo "application started"

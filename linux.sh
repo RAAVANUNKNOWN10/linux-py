@@ -64,6 +64,6 @@ sleep 2s
 #EOF'
 sudo chmod 777 ~/myapp/linux-py/login.py
 sudo chmod 777 ~/myapp/linux-py/login_desktop.sh
-sudo chmod 777 ~/Desktop/login.desktop
+sudo chmod 770 ~/Desktop/login.desktop
 
 echo "application stared"
