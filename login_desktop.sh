@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo python3 ~/myapp/login.py
+sudo python3 ~/myapp/linux-py/login.py

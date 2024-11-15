@@ -16,8 +16,8 @@ echo "Securing MySQL installation..."
 
 # Install SQLite
 echo "Installing SQLite..."
-#sudo apt install -y sqlite3
-apt install -y sqlite3
+sudo apt install -y sqlite3
+#apt install -y sqlite3
 
 # Check the installed versions
 echo "MySQL version:"
@@ -33,7 +33,7 @@ echo "Opening my sql server"
 #sudo mysql -u root -p
 #main packages
 echo "installing pyqt6, mysqlconector,pyside for runing application"
-apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
+sudo apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
 #apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
  
 #placing file 
@@ -43,10 +43,9 @@ echo "~/myapp dic was created"
 sleep 5s
 cd ~/myapp/
 git clone https://github.com/RAAVANUNKNOWN10/linux-py.git
-mv ./linux-py/myapp.py ~/myapp/login.py
+mv ./linux-py/myapp.py ~/myapp/linux-py/login.py
 #sudo mv myapp.py ~/myapp/login.py
 
-chmod 777 login.py
 echo "giving permission of exicution"
 mv ./linux-py/login.desktop ~/Desktop
 # creating desk top file
@@ -60,7 +59,8 @@ sleep 2s
 #sudo python3 ~/myapp/login.py
 
 #EOF'
-
+cd ~/myapp/linux-py/
+chmod 777 login.py
 chmod 111 login_desktop.sh
 
 cd ~/Desktop
