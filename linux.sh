@@ -65,7 +65,7 @@ Version=1.0
 Name=Raavan
 Comment=Runs my Python script
 Categories=Utility;Application;
-#EOF'
+EOF'
 echo "Exec=/bin/bash /home/"$(whoami)"/myapp/linux-py/login_desktop.sh" >> login.desktop
 echo "Icon=/home/"$(whoami)"/myapp/linux-py/logo.png" >> login.desktop
 echo "Terminal=false" >> login.desktop
