@@ -55,14 +55,22 @@ echo "giving permission of exicution"
 # creating desk top file
 
 sleep 2s
+cd ~/Desktop
 
 #can use root also
-#bash -c 'cat > login_desktop.sh << EOF
+bash -c 'cat > login.desktop << EOF
 
-#!/bin/bash
-#sudo python3 ~/myapp/login.py
-
+[Desktop Entry]
+Version=1.0
+Name=Raavan
+Comment=Runs my Python script
+Categories=Utility;Application;
 #EOF'
+echo "Exec=/bin/bash /home/"$(whoami)"/myapp/linux-py/login_desktop.sh" >> login.desktop
+echo "Icon=/home/"$(whoami)"/myapp/linux-py/logo.png" >> login.desktop
+echo "Terminal=false" >> login.desktop
+echo "Type=Application" >> login.desktop
+
 sudo chmod +x ~/myapp/linux-py/login.py
 sudo chmod +x ~/myapp/linux-py/login_desktop.sh
 sudo chmod +x ~/Desktop/login.desktop
