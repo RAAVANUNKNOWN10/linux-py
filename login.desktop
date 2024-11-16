@@ -1,7 +1,9 @@
 [Desktop Entry]
-Name=Raavan
-Comment= pythonqt
-Exce=~/myapp/linux-py/login_desktop.sh
-Icon=~/myapp/linux-py/logo.png
+Version=1.0
+Name=My Python Script
+Comment=Runs my Python script
+Exec=/bin/bash /home/user/myapp/linux-py/login_desktop.sh
+Icon=/home/user/myapp/linux-py/logo.png
 Terminal=false
 Type=Application
+Categories=Utility;Application;
