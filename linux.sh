@@ -33,7 +33,7 @@ echo "mysql services has been started"
 #sudo mysql -u root -p
 #main packages
 echo "installing pyqt6, mysqlconector,pyside for runing application"
-sudo apt install qt6-qmake qtbase5-dev qtbase6-dev-tools libxcb1 libx11-dev libxkbcommon-x11-0 libx11-xcb-dev libxcb-xinerama0 libxcb-image0 libxcb-randr0 libxcb-shm0 libxcb-icccm4
+#sudo apt install qt6-qmake qtbase5-dev qtbase6-dev-tools libxcb1 libx11-dev libxkbcommon-x11-0 libx11-xcb-dev libxcb-xinerama0 libxcb-image0 libxcb-randr0 libxcb-shm0 libxcb-icccm4
 sudo apt install python3-pyqt6 #python3-mysql-connector-python python3-pyside6
 #apt install python3-PyQt6 python3-mysql-connector-python python3-pyside6
  
@@ -63,8 +63,8 @@ sleep 2s
 #sudo python3 ~/myapp/login.py
 
 #EOF'
-sudo chmod 777 ~/myapp/linux-py/login.py
-sudo chmod 777 ~/myapp/linux-py/login_desktop.sh
-sudo chmod 770 ~/Desktop/login.desktop
+sudo chmod +x ~/myapp/linux-py/login.py
+sudo chmod +x ~/myapp/linux-py/login_desktop.sh
+sudo chmod +x ~/Desktop/login.desktop
 
 echo "application stared"
